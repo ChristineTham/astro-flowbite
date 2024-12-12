@@ -1,14 +1,14 @@
 import { defineConfig } from 'astro/config'
-import UnoCSS from 'unocss/astro'
+import tailwindcss from '@tailwindcss/vite'
 import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-base.netlify.app',
+  site: 'https://astro-flowbite.netlify.app',
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
-    UnoCSS({
-      injectReset: true
-    }),
     sitemap()
   ]
 });

@@ -1,8 +1,4 @@
-# Astro Base
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ab88bd2f-6bc0-4352-af4f-d7f490975684/deploy-status)](https://app.netlify.com/sites/astro-base/deploys)
-
-![screenshot](https://github.com/hellotham/astro-base/blob/main/screenshot.png?raw=true)
+# Astro Flowbite
 
 Minimal [Astro](https://astro.build) starter for new projects. MIT licence.
 
@@ -11,9 +7,9 @@ Uses:
 - [Typescript](https://www.typescriptlang.org/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/)
-- [UnoCSS](https://unocss.dev/)
+- [Tailwind CSS V4 beta](https://tailwindcss.com/docs/v4-beta)
+- [Flowbite](https://flowbite.com)
 - `@astrojs/sitemap` and `@astrojs/rss` preintegrated
-- Heroicons and SVG Logos preloaded via [Iconify](https://iconify.design/)
 
 ## 🚀 Project Structure
 
@@ -36,7 +32,7 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── pages/                # Location of pages
 │       └── index.astro
 ├── package.json
-└── uno.config.ts             # UnoCSS configuration file
+└── tailwind.config.cjs             # UnoCSS configuration file
 ```
 
 ## 🧞 Commands
