@@ -1,11 +1,12 @@
 {
   "name": "astro-flowbite",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
+    "clean": "rm -rf dist node_modules .astro",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build; prettier --write  \"dist/**/*.{js,html,css}\"",
+    "build": "astro build",
     "preview": "astro preview",
     "refresh": "pnpm dlx @astrojs/upgrade; pnpm up -L",
     "lint": "pnpm run lint:prettier && pnpm run lint:eslint",
@@ -15,15 +16,14 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.5.1",
-    "@tailwindcss/postcss": "4.1.12",
     "astro": "^5.13.5",
     "flowbite": "3.1.2",
-    "tailwindcss": "4.1.12"
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@eslint/markdown": "^7.2.0",
-    "@tailwindcss/vite": "4.1.12",
+    "@tailwindcss/vite": "^4.1.12",
     "@types/node": "^24.3.0",
     "@typescript-eslint/parser": "^8.41.0",
     "eslint": "^9.34.0",
